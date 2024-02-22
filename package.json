@@ -1,0 +1,17 @@
+{
+  "name": "ds_sesi10_ferawati",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^8.32.2",
+    "@wdio/cli": "^8.32.3",
+    "@wdio/cucumber-framework": "^8.32.3",
+    "@wdio/devtools-service": "^8.32.3",
+    "@wdio/local-runner": "^8.32.3",
+    "allure-commandline": "^2.27.0",
+    "dotenv": "^16.4.5"
+  },
+  "scripts": {
+    "wdio": "wdio run ./wdio.conf.js --cucumberOpts.tagExpression",
+    "gen-allure": "./node_modules/.bin/allure generate allure-results/ --clean",
+    "open-allure": "./node_modules/.bin/allure open"
+  }
+}
